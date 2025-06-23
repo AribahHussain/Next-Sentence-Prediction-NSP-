@@ -1,0 +1,80 @@
+## 🗂️ Dataset Information
+
+To train or evaluate BERT on the Next Sentence Prediction (NSP) task, sentence-pair datasets are required. These datasets typically contain two segments:
+- **Sentence A**: The context sentence.
+- **Sentence B**: A candidate for the next sentence.
+- **Label**: A binary indicator — `IsNext` (1) if Sentence B follows Sentence A, or `NotNext` (0) if it is a random sentence.
+
+### 🧾 Common Sources:
+- **BookCorpus + Wikipedia**: Used in BERT's original pretraining. These are large collections of contiguous text suitable for building positive and negative sentence pairs.
+- **Custom Pairs**: You can also create your own dataset by:
+  - Selecting paragraph pairs from text.
+  - Randomly replacing second sentences in 50% of the cases to simulate negative examples.
+
+### 📄 Format Example:
+
+| Sentence A                      | Sentence B                          | Label   |
+|----------------------------------|-------------------------------------|---------|
+| The cat sat on the windowsill.  | It watched the birds fly by.        | 1 (IsNext)  |
+| He opened his laptop.           | Bananas are a good source of fiber. | 0 (NotNext) |
+
+This format is essential for training models to distinguish real sentence continuity from unrelated sentence pairs.
+The following are the datasets that can be used for Next Sentence Prediction (NSP):
+
+WikiText-103
+
+BookCorpus (original)
+
+OpenWebText
+
+SNLI (Stanford Natural Language Inference)
+
+MultiNLI (Multi-Genre NLI)
+
+Quora Question Pairs
+
+CNN/DailyMail
+
+Gigaword
+
+SQuAD (Stanford Question Answering Dataset)
+
+GLUE Benchmark (BookCorpus subset)
+
+Common Crawl
+
+Reddit Comments Dataset
+
+Amazon Reviews
+
+DailyDialog
+
+EmpatheticDialogues
+
+Ubuntu Dialogue Corpus
+
+PersonaChat
+
+OpenSubtitles
+
+Tatoeba Sentence Pairs
+
+ParaNMT-50M
+
+PAWS (Paraphrase Adversaries from Word Scrambling)
+
+STS Benchmark
+
+COCO Captions
+
+Yelp Reviews Dataset
+
+
+
+
+
+
+
+
+
+
